@@ -19,22 +19,33 @@ eventsApp.controller('EventController',
                     creatorName: 'Bob Smith',
                     duration: '1 hr',
                     level: 'Advanced',
-                    abstract: 'In this session you will learn the ins and outs of directives!'
+                    abstract: 'In this session you will learn the ins and outs of directives!',
+                    upVoteCount: 0
                 },
                 {
                     name: 'Scopes for fun and profile',
                     creatorName: 'John Doe',
                     duration: '30m mins',
                     level: 'Introductory',
-                    abstract: 'This session will take a closer look at scope.  Learn what they do, '
+                    abstract: 'This session will take a closer look at scope.  Learn what they do, ',
+                    upVoteCount: 0
                 },
                 {
                     name: 'Well Behaved Controllers',
                     creatorName: 'Jane Doe',
                     duration: '2 hours',
                     level: 'Intermediate',
-                    abstract: 'Controllers are the beginning of everything Angular does.  Learn how to craft controllers that will win the respect of your friends and neighbors.'
+                    abstract: 'Controllers are the beginning of everything Angular does.  Learn how to craft controllers that will win the respect of your friends and neighbors.',
+                    upVoteCount: 0
                 }
             ]
+        }
+
+        $scope.upVoteSession = function (session) {
+            session.upVoteCount++;
+        }
+
+        $scope.downVoteSession = function (session) {
+            session.upVoteCount--;
         }
     });
