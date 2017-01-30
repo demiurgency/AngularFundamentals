@@ -1,7 +1,8 @@
-eventsApp.factory('eventData', function ($http, $log) {
+eventsApp.factory('eventData', function ($resource) {
+    var resource = $resource('/data/event/:id', { id: '@id' });
     return {
         getEvent: function () {
-            return $http({ method: 'GET', url: '/data/event/1/' });              
+            return resource.get({ id: 1 });
         }
     };
 });
