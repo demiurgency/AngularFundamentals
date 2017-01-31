@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 eventsApp.controller('CacheSampleController',
     function CacheSampleController($scope, myCache) {
