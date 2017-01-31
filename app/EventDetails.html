@@ -39,8 +39,15 @@
             </div>
             <hr />
             <h3>Sessions</h3>
+            Show:
+            <select ng-model="query" class="input-medium">
+                <option selected value="">All</option>
+                <option value="introductory">Introductory</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
             <ul class="thumbnails">
-                <li ng-repeat="session in event.sessions">
+                <li ng-repeat="session in event.sessions | filter:query | orderBy:sortOrder" class="span11" >
                     <div class="row session">
                         <div class="span0 well votingWidget">
                             <div class="votingButton" ng-click="upVoteSession(session)">
