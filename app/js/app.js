@@ -23,11 +23,6 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
                 }
             });
 
-        $routeProvider.when('/sampledirective',
-            {
-                templateUrl: 'templates/Sample/SampleDirective.html',
-                controller: 'SampleDirectiveController'
-            });
         $routeProvider.when('/sample/cachesample',
             {
                 templateUrl: 'templates/Sample/CacheSample.html',
@@ -48,7 +43,7 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
                 templateUrl: 'templates/Sample/FilterSample.html',
                 controller: 'FilterSampleController'
             });
-        $routeProvider.when('/sample/LocaleSample',
+        $routeProvider.when('/sample/localesample',
             {
                 templateUrl: 'templates/Sample/LocaleSample.html',
                 controller: 'LocaleSampleController'
