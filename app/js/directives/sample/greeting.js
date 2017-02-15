@@ -16,3 +16,5 @@ eventsApp.controller('GreetingController',
             alert('hello');
         }
     });
+
+    
