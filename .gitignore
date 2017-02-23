@@ -1,8 +1,7 @@
 node_modules
 DemoApp
 DemoApp-Finished
-<<<<<<< HEAD
 .idea
-=======
 .DS_Store
->>>>>>> a70f627a873539bacc6b0c888ace8e68a067c0e8
+debug.log
+

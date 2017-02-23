@@ -12,13 +12,22 @@
   "author": "Joe Eames & Jim Cooper",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "1.13.1",
-    "express": "4.13.0"
+    "body-parser": "1.13.1"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-util": "^3.0.8",
     "jasmine-core": "^2.5.2",
-    "karma": "^1.4.1",
+    "karma": "^1.5.0",
     "karma-chrome-launcher": "^2.0.0",
-    "karma-jasmine": "^1.1.0"
+    "karma-html-detailed-reporter": "^1.1.15",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "path": "^0.12.7"
   }
 }
