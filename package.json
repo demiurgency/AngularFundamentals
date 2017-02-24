@@ -28,6 +28,7 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-html-detailed-reporter": "^1.1.15",
     "karma-jasmine": "^1.1.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
     "karma-phantomjs-launcher": "^1.0.2",
     "path": "^0.12.7"
   }
