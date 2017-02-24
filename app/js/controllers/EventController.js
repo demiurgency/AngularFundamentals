@@ -4,7 +4,7 @@ eventsApp.controller('EventController',
     function EventController($scope, eventData, $routeParams, $route) {
         $scope.sortorder = 'name';
         $scope.event = $route.current.locals.event;
-        $scope.reload = function() {
+        $scope.reload = function () {
             $route.reload();
         }
 
@@ -14,5 +14,9 @@ eventsApp.controller('EventController',
 
         $scope.downVoteSession = function (session) {
             session.upVoteCount--;
+        }
+
+        $scope.scrollToSession = function () {
+            $anchorScroll();
         }
     });
