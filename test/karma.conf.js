@@ -1,10 +1,17 @@
 module.exports = function (config) {
+
   config.set({
 
     basePath: '../app',
 
-    preprocesors: {
+    // logLevel: config.LOG_DEBUG,
+
+    preprocessors: {
       '**/*.html': 'ng-html2js'
+    },
+
+    ngHtml2JsPreprocessor: {
+      prependPrefix: '/'
     },
 
     files: [
